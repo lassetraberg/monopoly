@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Field {
     private String name;
     private int number;
-    private ArrayList<Player> playersOnField;
+    private List<Player> playersOnField;
 
     public Field(String name, int number){
         this.name = name;
