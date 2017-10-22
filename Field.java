@@ -14,11 +14,15 @@ public class Field {
 
     @Override
     public String toString() {
-        return "[" + this.number + "] " + this.name;
+        return this.name + " (" + this.number + ")";
     }
 
     public void addPlayerToField(Player p){
         playersOnField.add(p);
+    }
+
+    public List<Player> getPlayersOnField() {
+        return playersOnField;
     }
 
     public int getNumber() {
