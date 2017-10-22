@@ -13,7 +13,11 @@ public class Game {
         players = new ArrayList<>();
         players.add(new Player("Player1", board.getFields()[0]));
         players.add(new Player("Player2",board.getFields()[0]));
-
+        for(Player p : players){
+            int i = 0;
+            placePlayerOnField(p, i);
+            i++;
+        }
     }
 
     public void play(){
@@ -33,6 +37,7 @@ public class Game {
                     winner = p;
                     finished = true;
                 }
+
             }
         } while(!finished);
         System.out.println(winner + " wins the game!");
