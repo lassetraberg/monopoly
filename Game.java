@@ -55,29 +55,6 @@ public class Game {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void printWelcome(){
         System.out.println("   WELCOME TO   ");
         System.out.println("*|¯¯¯¯¯¯¯¯¯¯¯¯|*");
