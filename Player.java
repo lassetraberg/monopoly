@@ -1,4 +1,4 @@
- public class Player {
+public class Player {
     private String name;
     private Field currentField;
     private int money;
