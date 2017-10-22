@@ -9,4 +9,7 @@ public class Board {
         }
     }
 
+    public Field[] getFields() {
+        return fields;
+    }
 }
