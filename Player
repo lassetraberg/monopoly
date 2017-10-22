@@ -1,0 +1,16 @@
+ public class Player {
+    private String name;
+    private Field currentField;
+    private int money;
+
+    public Player (String name, int money){
+        this.name = name;
+        this.money = money;
+    }
+
+    public void move (Dice die){
+
+    }
+
+
+}
