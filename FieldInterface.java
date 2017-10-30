@@ -1,5 +1,5 @@
 public interface FieldInterface {
-    String getname();
+    String getName();
     int getNumber();
     void consequence(Player p);
 }

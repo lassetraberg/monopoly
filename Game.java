@@ -33,10 +33,6 @@ public class Game {
                 System.out.println("You threw " + (dice.getFirstDie().getFace() + dice.getSecondDie().getFace()) + ": ");
                 printDice(dice.getFirstDie().getFace(),dice.getSecondDie().getFace());
                 System.out.println(p + " is now standing at " + p.getCurrentField() + "\n");
-                if(p.getLaps() > 1){
-                    winner = p;
-                    finished = true;
-                }
 
             }
         } while(!finished);
@@ -54,7 +50,7 @@ public class Game {
         int currentPosition = p.getCurrentField().getNumber() - 1;
         if (currentPosition + steps >= 40){
             placePlayerOnField(p, steps - (40 - currentPosition));
-            p.setLaps(p.getLaps() + 1);
+            p.increaseMoney(MonopolyConstants.PASSING_START);
         } else{
             placePlayerOnField(p, currentPosition + steps);
         }

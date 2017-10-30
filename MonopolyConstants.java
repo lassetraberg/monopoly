@@ -1,4 +1,4 @@
-public class MonopolyConstants {
+public interface MonopolyConstants {
     int START_MONEY = 1500;
     int JAIL_POS = 11;
     int PASSING_START = 200;

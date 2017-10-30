@@ -1,8 +1,8 @@
-public class GoToJailField implements FieldInterface {
+public class OtherField implements FieldInterface {
     String name;
     int number;
 
-    public GoToJailField(String name, int number){
+    public OtherField(String name, int number){
         this.name = name;
         this.number = number;
     }
@@ -17,6 +17,7 @@ public class GoToJailField implements FieldInterface {
         return number;
     }
 
+    @Override
     public String getName() {
         return name;
     }
